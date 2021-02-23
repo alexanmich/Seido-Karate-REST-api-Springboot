@@ -36,10 +36,12 @@ git clone https://github.com/alexanmich/Seido-Karate-REST-api-Springboot.git
     Visit [http://localhost:8080](http://localhost:8080) in your browser.
 
 ## Endpoints
-/all
-/all/{grade}
-/random
-/random/{grade}
+1) /all
+2) /all/{grade}
 
 <img width="1042" alt="all-screenshot" src="images/all.png">
+
+3) /random
+4) /random/{grade}
+
 <img width="1042" alt="random-screenshot" src="images/random.png">
