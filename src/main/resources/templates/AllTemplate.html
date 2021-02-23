@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8" />
+<title>Seido Karate Kata Training</title>
+<link href="../static/css/style.css" th:href="@{/css/style.css}"
+	rel="stylesheet" />
+</head>
+<body>
+	<div class="sidenav">
+		<h3>All Katas</h3>
+		<a href="/all/white">White</a>
+		<a href="/all/blue">Blue</a>
+		<a href="/all/yellow">Yellow</a>
+		<a href="/all/green">Green</a>
+		<a href="/all/brown">Brown</a>
+		<a href="/all">All</a>
+		<h3>Random Kata</h3>
+		<a href="/random/white">White</a>
+		<a href="/random/blue">Blue</a>
+		<a href="/random/yellow">Yellow</a>
+		<a href="/random/green">Green</a>
+		<a href="/random/brown">Brown</a>
+		<a href="/random">All</a>
+	</div>
+	<div class="main">
+		<h1>Seido Karate Kata Training</h1>
+		<table class="kataTable">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Grade</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="kata : ${katas}">
+					<td th:text="${kata.name}">Name</td>
+					<td th:text="${kata.grade}">Grade</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
